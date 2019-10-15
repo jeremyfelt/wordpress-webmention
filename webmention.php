@@ -25,6 +25,9 @@ defined( 'WEBMENTION_PROCESS_TYPE' ) || define( 'WEBMENTION_PROCESS_TYPE', WEBME
 
 defined( 'WEBMENTION_VOUCH' ) || define( 'WEBMENTION_VOUCH', false );
 
+defined( 'WEBMENTION_AVATAR_SIZE' ) || define( 'WEBMENTION_AVATAR_SIZE', 200 );
+defined( 'WEBMENTION_AVATAR_QUALITY' ) || define( 'WEBMENTION_AVATAR_QUALITY', 100 );
+
 // initialize admin settings
 require_once dirname( __FILE__ ) . '/includes/class-webmention-admin.php';
 add_action( 'admin_init', array( 'Webmention_Admin', 'init' ) );
